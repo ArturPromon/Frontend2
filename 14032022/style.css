@@ -54,5 +54,20 @@ footer{
   text-align:center;
   bottom: 0px;
   /* padding-bottom: 20px; */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+}
+
+#table{
+  width: 700px;
+  border-collapse: collapse;
+  margin: auto;
+  table-layout: fixed;
+}
+
+#table th{
+  border: 2px solid black
+}
+
+#table td{
+  border: 1px solid black
 }
