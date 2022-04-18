@@ -1,0 +1,38 @@
+body{
+  background-color: red;
+}
+
+$bgcolor: white;
+$divwidth: 200px;
+
+@mixin font{
+  font-size: 1.5em;
+  color: black;
+}
+
+.block:not(.first){
+  border-radius: 10px;
+  background-color: $bgcolor;
+  width: $divwidth;
+  height: 300px;
+  margin-top: 10px;
+}
+
+.first{
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  margin-top: 10px;
+  background-color: $bgcolor;
+}
+
+#list{
+  @include font;
+  padding:10px;
+  margin-left: 30px;
+  list-style: none;
+
+  li{
+    text-decoration: underline;
+  }
+}
