@@ -28,33 +28,66 @@
 }
 
 @mixin grid($sum, $margin){
-  @if($sum == 2){
+  @if($sum ==2){
     float:left;
     background: grey;
-    margin: $margin;
-    margin-bottom: 0;
-
+    margin-right: $margin;
+    margin-left: $margin;
+    margin-top: $margin;
     height: 200px;
-    width: ((100% -($sum) * ($margin * 1.5)) / $sum);
+    width: ((100% -($sum + 1) * $margin) / $sum);
 
     &:nth-child(#{$sum}n){
       margin-left: 0;
-      // margin-bottom: 0;
     }
-    &:nth-child(#{($sum*4)-1}n){
+    &:nth-child(#{$sum*4}n){
+      margin-bottom: $margin;
+
+    }
+  }
+  @if($sum ==3){
+    float:left;
+    background: grey;
+    // margin-bottom: $margin;
+    margin-left: $margin;
+    margin-top: $margin;
+    height: 200px;
+    //46
+    width: ((100% -($sum + 1) * $margin) / $sum);
+
+
+    &:nth-child(#{$sum}n){
+      margin-right: $margin;
+    }
+    &:nth-child(#{($sum*3)- 1}n){
       margin-bottom: $margin;
     }
-
-    }@else{
-      float:left;
-      background: grey;
-      margin: $margin;
+  }
+  @if($sum ==1){
+    float:left;
+    background: grey;
+    // margin-right: $margin;
+    margin-bottom: $margin;
+    height: 200px;
+    //46
+    width:100%;
+    &:nth-child(#{$sum * 8}n){
       margin-bottom: 0;
-      height: 200px;
-      width: 100% - ($margin * 2);
-
-      &:nth-child(#{($sum*8)}n){
-        margin-bottom: $margin;
-      }
     }
+
+  }
+  @if($sum ==8){
+    float:left;
+    background: grey;
+    margin-right: $margin;
+    height: 200px;
+    // 86
+    width:((100% -($sum - 1) * $margin) / $sum);
+
+    &:nth-child(#{$sum}n){
+      margin-right: 0;
+      margin-bottom: 0;
+    }
+
+  }
 }

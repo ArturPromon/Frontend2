@@ -48,20 +48,22 @@ body{
   @include link(black, red, blue, grey);
 }
 
+
 #grid{
   width: 100%;
   height: auto;
   float: left;
   background: pink;
 
+
   div{
     @include grid(2, 2%);
   }
 }
 
-@for $i from 1 to 5{
-  .#{$someVar}-#{$i} {
-    width: 50px + $i;
-    height: 50px + $i;
-  }
-}
+// @for $i from 1 to 5{
+//   .#{$someVar}-#{$i} {
+//     width: 50px + $i;
+//     height: 50px + $i;
+//   }
+// }

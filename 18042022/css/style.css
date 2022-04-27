@@ -77,34 +77,15 @@ body {
 #grid div {
   float: left;
   background: grey;
-  margin: 2%;
-  margin-bottom: 0;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 2%;
   height: 200px;
   width: 47%;
 }
 #grid div:nth-child(2n) {
   margin-left: 0;
 }
-#grid div:nth-child(7n) {
+#grid div:nth-child(8n) {
   margin-bottom: 2%;
-}
-
-.someClass-1 {
-  width: 51px;
-  height: 51px;
-}
-
-.someClass-2 {
-  width: 52px;
-  height: 52px;
-}
-
-.someClass-3 {
-  width: 53px;
-  height: 53px;
-}
-
-.someClass-4 {
-  width: 54px;
-  height: 54px;
 }
