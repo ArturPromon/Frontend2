@@ -89,6 +89,7 @@ body{
 }
 
 .divpal span{
+  color: #000;
   position: absolute;
   bottom: 28px;
   left: 0;
@@ -127,7 +128,7 @@ body{
   width: 350px;
   /* height: 360px; */
   float: left;
-  margin-right: 25px; 
+  margin-right: 25px;
 }
 
 .text{
@@ -135,5 +136,26 @@ body{
   color: #fff;
   font-size: 1.4em;
   text-align: justify;
-
 }
+
+.images{
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.images.imgsize{
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  width: 700px;
+  height: 600px;
+  transform: translate(-50%, -50%);
+}
+canvas {
+  /* margin:auto; */
+  margin-top: 60px;
+  background: #eee;
+  display: block;
+ }
